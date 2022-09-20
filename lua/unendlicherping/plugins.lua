@@ -18,6 +18,12 @@ local function plugins(use)
 
         -- Telescope File Browser
         'nvim-telescope/telescope-file-browser.nvim',
+
+        -- fzf
+        {
+            'nvim-telescope/telescope-fzf-native.nvim',
+            run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' 
+        },
     }
 
     -- Language Services
@@ -53,12 +59,18 @@ local function plugins(use)
 
         -- Nord
         'shaunsingh/nord.nvim',
+
+        -- Intellij
+        'chiendo97/intellij.vim',
     }
 
     -- UI
     use {
         -- dashboard
         'glepnir/dashboard-nvim',
+
+        -- Floaterm
+        'voldikss/vim-floaterm',
 
         -- Lualine
         {
@@ -67,7 +79,7 @@ local function plugins(use)
         }
     }
 
-    -- My Plugins
+
     use {
         'unendlicherPing/very-important-plugin.nvim',
     }

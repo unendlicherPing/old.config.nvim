@@ -1,5 +1,4 @@
 local wk = require('which-key')
-local map = vim.api.nvim_set_keymap
 
 -- Telescope
 wk.register({
@@ -21,5 +20,10 @@ wk.register({
     h = {
         name = "theme",
         t = { "<cmd>Telescope colorscheme<CR>", "Load new Theme" },
+    },
+    t = {
+        name = "Floatterm",
+        l = { '<cmd>FloatermNew --height=0.9 --width=0.9 lg<CR>', "Open lazygit" },
+        t = { '<cmd>FloatermNew --autoclose=2<CR>', "Open a terminal" },
     },
 }, { prefix = "<leader>" })

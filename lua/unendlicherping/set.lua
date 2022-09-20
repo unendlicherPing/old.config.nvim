@@ -1,19 +1,23 @@
-vim.opt.nu = true
-vim.opt.relativenumber = true
+local set = vim.opt
+local let = vim.g
 
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
-vim.opt.hlsearch = false
-vim.opt.incsearch = true
+set.nu = true
+set.relativenumber = true
 
-vim.opt.smartindent = true
+set.tabstop = 4
+set.softtabstop = 4
+set.shiftwidth = 4
+set.expandtab = true
+set.hlsearch = false
+set.incsearch = true
 
-vim.opt.wrap = false
+set.smartindent = true
+set.linespace = 3
 
-vim.g.mapleader = " "
+set.wrap = false
 
-vim.opt.timeoutlen = 50
+let.mapleader = " "
 
-vim.opt.clipboard = "unnamedplus"
+set.timeoutlen = 50
+
+set.clipboard = "unnamedplus"
