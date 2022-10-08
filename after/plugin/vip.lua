@@ -1,1 +1,1 @@
-require('vip').setup("🤣")
+-- require('vip').setup("🤣")

@@ -1,30 +1,7 @@
 local db = require('dashboard')
-local home = os.getenv('HOME')
 
-db.default_banner = {
-  '',
-  '',
-  ' ███╗   ██╗ ███████╗ ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗',
-  ' ████╗  ██║ ██╔════╝██╔═══██╗ ██║   ██║ ██║ ████╗ ████║',
-  ' ██╔██╗ ██║ █████╗  ██║   ██║ ██║   ██║ ██║ ██╔████╔██║',
-  ' ██║╚██╗██║ ██╔══╝  ██║   ██║ ╚██╗ ██╔╝ ██║ ██║╚██╔╝██║',
-  ' ██║ ╚████║ ███████╗╚██████╔╝  ╚████╔╝  ██║ ██║ ╚═╝ ██║',
-  ' ╚═╝  ╚═══╝ ╚══════╝ ╚═════╝    ╚═══╝   ╚═╝ ╚═╝     ╚═╝',
-  '',
-  ' [ TIP: To exit Neovim, just power off your computer. ] ',
-  '',
-}
--- linux
---db.preview_command = 'ueberzug'
---
---db.preview_file_path = home .. '/.config/nvim/static/neovim.cat'
-db.preview_file_height = 11
-db.preview_file_width = 70
+db.custom_header = { }
 db.custom_center = {
-    {icon = '  ',
-    desc = 'Recent sessions                         ',
-    shortcut = 'SPC s l',
-    action ='SessionLoad'},
     {icon = '  ',
     desc = 'Find recent files                       ',
     action = 'Telescope oldfiles',
@@ -44,7 +21,9 @@ db.custom_center = {
     {icon = '  ',
     desc = 'Load new theme                          ',
     action = 'Telescope colorscheme',
-    shortcut = 'SPC h t'},
-  }
-db.custom_footer = { '', '🎉 If I\'m using Neovim, then my Emacs config must be broken!' }
-db.session_directory = "~/AppData/Local/nvim/session"
+    shortcut = 'SPC h t'}, 
+    }
+db.custom_footer = { }
+
+db.hide_statusline = true
+db.center_pad = 30
