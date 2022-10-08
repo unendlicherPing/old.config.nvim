@@ -21,3 +21,4 @@ let.mapleader = " "
 set.timeoutlen = 50
 
 set.clipboard = "unnamedplus"
+set.termguicolors = true

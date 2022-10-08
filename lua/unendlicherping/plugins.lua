@@ -18,38 +18,6 @@ local function plugins(use)
 
         -- Telescope File Browser
         'nvim-telescope/telescope-file-browser.nvim',
-
-        -- fzf
-        {
-            'nvim-telescope/telescope-fzf-native.nvim',
-            run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' 
-        },
-    }
-
-    -- Language Services
-    use {
-        -- Neo Vim LSP - Config
-        'neovim/nvim-lspconfig',
-
-        -- Neo Vim LSP Installer
-        'williamboman/nvim-lsp-installer',
-
-        -- Treesitter
-        {
-            'nvim-treesitter/nvim-treesitter',
-            run = 'TSUpdate',
-        },
-
-        -- Code Completion
-        use {
-            'hrsh7th/nvim-cmp',
-            requires = {
-                { 'hrsh7th/cmp-nvim-lsp', opt = true },
-                { 'hrsh7th/cmp-buffer', opt = true },
-                { 'hrsh7th/cmp-path', opt = true },
-                { 'hrsh7th/cmp-cmdline', opt = true },
-            },
-        },
     }
 
     -- Themes
@@ -58,10 +26,13 @@ local function plugins(use)
         'folke/tokyonight.nvim',
 
         -- Nord
-        'shaunsingh/nord.nvim',
+        'arcticicestudio/nord-vim',
 
         -- Intellij
         'chiendo97/intellij.vim',
+
+        -- Monokay
+        'sickill/vim-monokai',
     }
 
     -- UI
@@ -76,7 +47,28 @@ local function plugins(use)
         {
           'nvim-lualine/lualine.nvim',
           requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-        }
+        },
+
+        -- noice.nvim
+        {
+          "folke/noice.nvim",
+          event = "VimEnter",
+          config = function()
+            require("noice").setup()
+          end,
+          requires = {
+            -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+            "MunifTanjim/nui.nvim",
+            "rcarriga/nvim-notify",
+            "hrsh7th/nvim-cmp",
+            }
+        },
+
+        -- winbar
+        { 'fgheng/winbar.nvim' },
+
+        -- tabby
+        'nanozuki/tabby.nvim',
     }
 
 
@@ -84,11 +76,17 @@ local function plugins(use)
         'unendlicherPing/very-important-plugin.nvim',
     }
 
+    -- discord rpc
+    use 'andweeb/presence.nvim'
     -- which key
     use 'folke/which-key.nvim'
 
     -- vim be good
-    use 'ThePrimeagen/vim-be-good'
+    use { 
+        'ThePrimeagen/vim-be-good',
+        opt = true,
+        cmd = { "VimBeGood" },
+    }
 
     if packer_bootstrap then
         packer.sync()

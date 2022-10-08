@@ -74,34 +74,6 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["cmp-buffer"] = {
-    after_files = { "C:\\Users\\morit\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\cmp-buffer\\after\\plugin\\cmp_buffer.lua" },
-    loaded = false,
-    needs_bufread = false,
-    path = "C:\\Users\\morit\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\cmp-buffer",
-    url = "https://github.com/hrsh7th/cmp-buffer"
-  },
-  ["cmp-cmdline"] = {
-    after_files = { "C:\\Users\\morit\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\cmp-cmdline\\after\\plugin\\cmp_cmdline.lua" },
-    loaded = false,
-    needs_bufread = false,
-    path = "C:\\Users\\morit\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\cmp-cmdline",
-    url = "https://github.com/hrsh7th/cmp-cmdline"
-  },
-  ["cmp-nvim-lsp"] = {
-    after_files = { "C:\\Users\\morit\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\cmp-nvim-lsp\\after\\plugin\\cmp_nvim_lsp.lua" },
-    loaded = false,
-    needs_bufread = false,
-    path = "C:\\Users\\morit\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\cmp-nvim-lsp",
-    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
-  },
-  ["cmp-path"] = {
-    after_files = { "C:\\Users\\morit\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\cmp-path\\after\\plugin\\cmp_path.lua" },
-    loaded = false,
-    needs_bufread = false,
-    path = "C:\\Users\\morit\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\cmp-path",
-    url = "https://github.com/hrsh7th/cmp-path"
-  },
   ["dashboard-nvim"] = {
     loaded = true,
     path = "C:\\Users\\morit\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\dashboard-nvim",
@@ -117,30 +89,33 @@ _G.packer_plugins = {
     path = "C:\\Users\\morit\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
-  ["nord.nvim"] = {
+  ["noice.nvim"] = {
+    config = { "\27LJ\2\n3\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\nnoice\frequire\0" },
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "C:\\Users\\morit\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\noice.nvim",
+    url = "https://github.com/folke/noice.nvim"
+  },
+  ["nord-vim"] = {
     loaded = true,
-    path = "C:\\Users\\morit\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nord.nvim",
-    url = "https://github.com/shaunsingh/nord.nvim"
+    path = "C:\\Users\\morit\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nord-vim",
+    url = "https://github.com/arcticicestudio/nord-vim"
+  },
+  ["nui.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\morit\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nui.nvim",
+    url = "https://github.com/MunifTanjim/nui.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
     path = "C:\\Users\\morit\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
-  ["nvim-lsp-installer"] = {
+  ["nvim-notify"] = {
     loaded = true,
-    path = "C:\\Users\\morit\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lsp-installer",
-    url = "https://github.com/williamboman/nvim-lsp-installer"
-  },
-  ["nvim-lspconfig"] = {
-    loaded = true,
-    path = "C:\\Users\\morit\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
-    url = "https://github.com/neovim/nvim-lspconfig"
-  },
-  ["nvim-treesitter"] = {
-    loaded = true,
-    path = "C:\\Users\\morit\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
-    url = "https://github.com/nvim-treesitter/nvim-treesitter"
+    path = "C:\\Users\\morit\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-notify",
+    url = "https://github.com/rcarriga/nvim-notify"
   },
   ["nvim-web-devicons"] = {
     loaded = false,
@@ -158,15 +133,20 @@ _G.packer_plugins = {
     path = "C:\\Users\\morit\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["presence.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\morit\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\presence.nvim",
+    url = "https://github.com/andweeb/presence.nvim"
+  },
+  ["tabby.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\morit\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\tabby.nvim",
+    url = "https://github.com/nanozuki/tabby.nvim"
+  },
   ["telescope-file-browser.nvim"] = {
     loaded = true,
     path = "C:\\Users\\morit\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope-file-browser.nvim",
     url = "https://github.com/nvim-telescope/telescope-file-browser.nvim"
-  },
-  ["telescope-fzf-native.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\morit\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope-fzf-native.nvim",
-    url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
@@ -184,8 +164,11 @@ _G.packer_plugins = {
     url = "https://github.com/unendlicherPing/very-important-plugin.nvim"
   },
   ["vim-be-good"] = {
-    loaded = true,
-    path = "C:\\Users\\morit\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-be-good",
+    commands = { "VimBeGood" },
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "C:\\Users\\morit\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\vim-be-good",
     url = "https://github.com/ThePrimeagen/vim-be-good"
   },
   ["vim-floaterm"] = {
@@ -193,14 +176,37 @@ _G.packer_plugins = {
     path = "C:\\Users\\morit\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-floaterm",
     url = "https://github.com/voldikss/vim-floaterm"
   },
+  ["vim-monokai"] = {
+    loaded = true,
+    path = "C:\\Users\\morit\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-monokai",
+    url = "https://github.com/sickill/vim-monokai"
+  },
   ["which-key.nvim"] = {
     loaded = true,
     path = "C:\\Users\\morit\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\which-key.nvim",
     url = "https://github.com/folke/which-key.nvim"
+  },
+  ["winbar.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\morit\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\winbar.nvim",
+    url = "https://github.com/fgheng/winbar.nvim"
   }
 }
 
 time([[Defining packer_plugins]], false)
+
+-- Command lazy-loads
+time([[Defining lazy-load commands]], true)
+pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file VimBeGood lua require("packer.load")({'vim-be-good'}, { cmd = "VimBeGood", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
+time([[Defining lazy-load commands]], false)
+
+vim.cmd [[augroup packer_load_aucmds]]
+vim.cmd [[au!]]
+  -- Event lazy-loads
+time([[Defining lazy-load event autocommands]], true)
+vim.cmd [[au VimEnter * ++once lua require("packer.load")({'noice.nvim'}, { event = "VimEnter *" }, _G.packer_plugins)]]
+time([[Defining lazy-load event autocommands]], false)
+vim.cmd("augroup END")
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
